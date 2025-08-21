@@ -1,0 +1,17 @@
+#Embaralha palavras
+from random import choice
+from random import shuffle
+
+palavras = ['python', 'programação', 'colab', 'palavra']
+palavrasec = choice(palavras)
+p=list(palavrasec)
+shuffle(p)
+print(p)
+
+chute=str(input('Acerte a palavra que está embaralhada '))
+
+while chute!=palavrasec:
+  chute=str(input('Você errou, tente novamente: '))
+
+if chute==palavrasec:
+  print('Você acertou, parabéns')
